@@ -5,13 +5,13 @@ html {
 
 body {
   font-family: Helvetica, sans-serif;
-  line-height: 1.4em;
+  line-height: 1.4rem;
 
 }
 
 div {
   display: block;
-  border: solid blue 1px;
+
 }
 
 .company {
@@ -90,19 +90,6 @@ nav ul {
   display: none;
 }
 
-@media only screen and (max-width: 1024px)
-{
-.mobile-nav {
-  display: block;
-  text-align: center;
-}
-}
-@media only screen and (max-width: 1024px)
-{
-  nav ul {
-    display: none;
-  }
-}
 
 .products, .business-info {
   display: flex;
@@ -151,4 +138,57 @@ footer {
   color: white;
   margin-top: 4rem;
   padding: 5rem 0;
+}
+@media only screen and (max-width: 1024px)
+{
+.mobile-nav {
+  display: block;
+  text-align: center;
+}
+nav ul {
+  display: none;
+}
+.product {
+  width: 47%;
+}
+body {
+  font-size: 16px;
+}
+.product.glasses {
+  display: none;
+}
+}
+
+@media only screen and (max-width: 470px) {
+  .main-banner {
+    height: 15rem;
+  }
+  .headline {
+    width: 100%;
+    padding: 1rem 2rem;
+    top: 10rem;
+  }
+  .headline h4 {
+    font-size: 0.77rem;
+  }
+  .headline h1 {
+    font-size: 1rem;
+  }
+  .products, .business-info {
+    flex-wrap: wrap;
+  }
+  .product {
+    width: 90%;
+    margin: auto;
+  }
+  .product.watch {
+    display: none;
+  }
+  .info {
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+  footer {
+    text-align: center;
+  }
 }
